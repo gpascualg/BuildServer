@@ -1,0 +1,6 @@
+secret_key: WkjV25@aNg6@21*1W¿?21WQda-.<¨Ç2"!GDS
+client_id: ce5fc12578cb3b000ca3
+scopes:
+    - repo
+    - repo_deployment
+    - read:org
