@@ -4,7 +4,7 @@ Routes and views for the flask application.
 
 from datetime import datetime
 from flask import render_template, request, redirect, session
-from BuildServer import app
+from Views import app
 from webhook import Webhook
 import random
 import string

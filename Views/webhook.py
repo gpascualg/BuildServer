@@ -1,17 +1,13 @@
-﻿from enum import Enum
+﻿from eenum import EEnum
 from switch import switch
 import json
 
-class WebhookType(Enum):
-    NONE = 0
+class WebhookType(EEnum):
     PUSH = 1
-
-    @staticmethod
-    def from_data(data):
-        try:
-            return getattr(Enum, data.action)
-        except:
-            return NONE
+    
+    @classmethod
+    def from_data(cls, data):
+        return EEnum.from_string(data.action)
 
 
 class Webhook(object):
